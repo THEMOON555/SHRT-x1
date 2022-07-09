@@ -68,7 +68,7 @@ def inputt():
 \033[1;97m2.\033[1;97mReport Bug
 \033[1;97m3.\033[1;97mExit
 """)
-    pil = input(f"{W}Pilih Menu Tools {R}:{G} ")
+    pil = input(f"Pilih Menu Tools:")
     if pil == "1":
         print (f"{W}[{Y}1{W}]{R}.{W} Short Ke {G}'{W}bitly{G}'\n{W}[{Y}2{W}]{R}. {W}Short Ke {G}'{W}tinyurl{G}'")
         pilih=input(f"{W}Pilih Menu Tools {R}:{G} ")
