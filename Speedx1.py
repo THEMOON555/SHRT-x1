@@ -6,7 +6,7 @@ try:
     import bitly_api
     from colorama import Fore,init,Back
 except ModuleNotFoundError:
-    printtik(f"{W}[{B}+{W}] Installing Module{abu}.....")
+    printtik(f"{W}[{B}-{W}] Installing Module{abu}.....")
     os.system("bash requirements.sh")
 
 B = Fore.BLUE
