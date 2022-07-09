@@ -6,13 +6,8 @@ try:
     import bitly_api
     from colorama import Fore,init,Back
 except ModuleNotFoundError:
+     printtik(f"{W}[{R}!{W}] Installing module {R}!!!")
     os.system("bash requirements.sh")
-
-W = Fore.WHITE
-R = Fore.RED
-G = Fore.GREEN
-BL = Fore.BLACK
-Y = Fore.YELLOW
 
 Hijau="\033[1;92m"
 putih="\033[1;97m"
