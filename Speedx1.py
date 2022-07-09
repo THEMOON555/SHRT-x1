@@ -8,7 +8,6 @@ try:
 except ModuleNotFoundError:
     os.system("bash requirements.sh")
 
-B = Fore.BLUE
 W = Fore.WHITE
 R = Fore.RED
 G = Fore.GREEN
