@@ -64,9 +64,9 @@ def banner():
 """)
 
 def inputt():
-    print (f"""\033[1;97m1{R}.\033[1;92mShort-Link
-\033[1;97m2{R}.\033[1;97mReport {Y}Bug
-\033[1;97m3{R}.\033[1;97mExit
+    print (f"""\033[1;97m1.\033[1;92mShort-Link
+\033[1;97m2.\033[1;97mReport {Y}Bug
+\033[1;97m3.\033[1;97mExit
 """)
     pil = input(f"{W}Pilih Menu Tools {R}:{G} ")
     if pil == "1":
