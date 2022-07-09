@@ -64,7 +64,7 @@ def banner():
 """)
 
 def inputt():
-    print (f""".\033[1;97m1{W}.\033[1;92mShort-Link
+    print (f"""\033[1;97m1{R}.\033[1;92mShort-Link
 \033[1;97m2{R}.\033[1;97mReport {Y}Bug
 \033[1;97m3{R}.\033[1;97mExit
 """)
