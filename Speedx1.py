@@ -40,9 +40,7 @@ def bitly():
     BITLY_ACCESS_TOKEN = "74e40eae5737852ee2bba8ece28adb3b452208c4"
     link = input(f"{biru}[~] Link : ")
     start = bitly_api.Connection(access_token=BITLY_ACCESS_TOKEN)
-    response = start.shorten('http://google.com/')
-print(response)
-   
+    done = start.shorten('http://google.com/')
     time.sleep(3)
     printtik(f"[✓] 'message':'success-shortn'")
     printtik (f"""
