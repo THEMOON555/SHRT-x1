@@ -7,7 +7,9 @@ try:
     from colorama import Fore,init,Back
 except ModuleNotFoundError:
      printtik(f"{W}[{R}!{W}] Installing module {R}!!!")
-    os.system("bash requirements.sh")
+ 
+
+   os.system("bash requirements.sh")
 
 Hijau="\033[1;92m"
 putih="\033[1;97m"
