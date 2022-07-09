@@ -70,7 +70,7 @@ def inputt():
 """)
     pil = input(f"Pilih Menu Tools:")
     if pil == "1":
-        print (f"[1]. Short Ke 'bitly'\n[{2]. {W}Short Ke 'tinyurl'")
+        print (f"[1]. Short Ke 'bitly'\n[2]. Short Ke 'tinyurl'")
         pilih=input(f"Pilih Menu Tools : ")
         if pilih == "1":
             bitly()
