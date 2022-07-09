@@ -70,8 +70,8 @@ def inputt():
 """)
     pil = input(f"Pilih Menu Tools:")
     if pil == "1":
-        print (f"{W}[{Y}1{W}]{R}.{W} Short Ke {G}'{W}bitly{G}'\n{W}[{Y}2{W}]{R}. {W}Short Ke {G}'{W}tinyurl{G}'")
-        pilih=input(f"{W}Pilih Menu Tools {R}:{G} ")
+        print (f"[1]. Short Ke 'bitly'\n[{2]. {W}Short Ke 'tinyurl'")
+        pilih=input(f"Pilih Menu Tools : ")
         if pilih == "1":
             bitly()
             tanya()
@@ -82,7 +82,7 @@ def inputt():
         os.system("xdg-open https://www.instagram.com/ammarexecuted")
         tanya()
     if pil == "3":
-        print (f"{W}[{R}!{W}] Program Dihentikan {R}!!!")
+        print (f"[!] Program Dihentikan !!!")
         sys.exit()
 
 banner()
