@@ -37,9 +37,9 @@ def tanya():
         sys.exit()
 
 def bitly():
-    token='df26aab8b854cb95e39df6e4a2f51d7e77b90f5d'
-    link = input(f"[{biru}~] Link : ")
-    start = bitly_api.Connection(access_token = token)
+    BITLY_ACCESS_TOKEN = "74e40eae5737852ee2bba8ece28adb3b452208c4"
+    link = input(f"{biru}[~] Link : ")
+    start = bitly_api.Connection(access_token=BITLY_ACCESS_TOKEN)
     done = start.shorten(link)
     time.sleep(3)
     printtik(f"[✓] 'message':'success-shortn'")
