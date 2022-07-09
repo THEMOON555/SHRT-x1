@@ -28,32 +28,32 @@ def printtik(s):
         time.sleep(1./100)
 
 def tanya():
-    tanya=input(f"{W}[{R}!{W}] Back To The Tools {biru}({W}y{abu}/{W}t{biru}) {R}:{G} ")
+    tanya=input(f"[!] Back To The Tools {biru}(y{abu}/t{biru}) : ")
     if tanya == "y" or tanya == "Y":
         banner()
         inputt()
     if tanya == "t" or tanya == "T":
-        printtik(f"{W}[{R}!{W}] Program Dihentikan {R}!!!")
+        printtik(f"[!] Program Dihentikan !!!")
         sys.exit()
 
 def bitly():
     token='df26aab8b854cb95e39df6e4a2f51d7e77b90f5d'
-    link = input(f"{W}[{biru}~{W}] Link {R}:{G} ")
+    link = input(f"[{biru}~] Link : ")
     start = bitly_api.Connection(access_token = token)
     done = start.shorten(link)
     time.sleep(3)
-    printtik(f"{W}[{G}✓{W}] 'message':'success-shortn'")
+    printtik(f"[✓] 'message':'success-shortn'")
     printtik (f"""
-{W}[{R}•{W}] Url {R}:{Y} {done['url']}
-{W}[{Y}•{W}] Long Url {R}:{Y} {link}""")
+   [•] Url : {done['url']}
+   [•] Long Url : {link}""")
 
 def tinyurl():
-    link = input(f"{W}[{biru}~{W}] Link {R}:{G} ")
+    link = input(f"[{biru}~] Link : ")
     start = pyshorteners.Shortener().tinyurl.short(link)
     printtik(f"[✓] 'message':'success-shortn'")
     printtik (f"""
-{W}[{R}•{W}] Url {R}:{Y} {start}
-{W}[{Y}•{W}] Long Url {R}:{Y} {link}""")
+   [•] Url : {start}
+   [•] Long Url : {link}""")
 
 def banner():
     os.system("clear")
@@ -82,7 +82,7 @@ def inputt():
         os.system("xdg-open https://www.instagram.com/ammarexecuted")
         tanya()
     if pil == "3":
-        print (f"[!] Program Dihentikan !!!")
+        print (f"[!] Program discontinued  !!!")
         sys.exit()
 
 banner()
